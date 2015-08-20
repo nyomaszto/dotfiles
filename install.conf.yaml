@@ -11,11 +11,9 @@
       force: true
       path: conf/terminalrc
     ~/.fonts: 
-      create: true
       force: true
       path: fonts/
     ~/.i3/config: 
-      create: true
       force: true
       path: conf/i3config
     ~/.i3status.conf: 
@@ -42,10 +40,10 @@
       path: conf/zshrc
 - 
   shell: 
-    - 
+    -
       - "git submodule update --init --recursive"
       - "installing submodules"
-    - 
+    -
       - "cd ~/.vim/bundle/vundle.vim && git pull || git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/vundle.vim"
       - "installing vundle"
     - 
