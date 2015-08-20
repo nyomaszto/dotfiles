@@ -30,7 +30,7 @@
     ~/.vim: 
       create: true
       force: true
-      path: conf/vim/
+      path: vim/
     ~/.vimrc: 
       force: true
       path: conf/vimrc
@@ -46,6 +46,10 @@
       - "git submodule update --init --recursive"
       - "installing submodules"
     - 
-      - "git clone https://github.com/gmarik/vundle.vim.git ~/.vim/bundle/vundle.vim"
-      - "install vundle"
-
+      - "vundledir=~/.vim/bundle/vundle.vim"
+      - "installing vundle"
+      - "vundlerepo=https://github.com/gmarik/Vundle.vim.git"
+      - "cd $vundledir && git pull || git clone $vundlerepo $vundledir"
+    - 
+      - "vim +PluginInstall +qall"
+      - "installing vim plugins"
