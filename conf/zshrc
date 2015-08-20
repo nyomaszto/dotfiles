@@ -1,0 +1,9 @@
+autoload -U promptinit
+autoload compinit && compinit
+promptinit
+prompt walters
+PROMPT="\$ "
+
+# compinit will automatically find new executables in the $PATH
+zstyle ':completion:*' rehash true
+zstyle ':completion:*' menu select

@@ -1,0 +1,4 @@
+export PATH=~/npm-global/bin:$PATH
+export PATH=/home/$USER/bin/:$PATH
+export PYTHONSTARTUP="/home/n3vtelen/.pythonrc"
+export LD_LIBRARY_PATH=:/usr/local/lib

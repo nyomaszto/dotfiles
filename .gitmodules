@@ -1,0 +1,16 @@
+[submodule "dotbot"]
+	path = dotbot
+	url = https://github.com/anishathalye/dotbot
+	ignore = untracked
+[submodule "vim/bundle"]
+	path = vim/bundle
+	url = http://github.com/gmarik/vundle.git
+	ignore = untracked
+[submodule "vim/bundle/Vundle.vim"]
+	path = vim/bundle/Vundle.vim
+	url = http://github.com/gmarik/vundle.git
+	ignore = untracked
+[submodule "vim/bundle/vim-auto-save"]
+	path = vim/bundle/vundle/vim-auto-save
+	url = http://github.com/vim-scripts/vim-auto-save
+	ignore = dirty
