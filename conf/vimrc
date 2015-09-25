@@ -5,15 +5,8 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/vundle.vim
 call vundle#begin('~/.vim/bundle')
 Plugin 'airblade/vim-gitgutter'
-Plugin 'elzr/vim-json'
 Plugin 'gmarik/Vundle.vim', {'name': 'vundle.vim'}
-Plugin 'jelera/vim-javascript-syntax'
-Plugin 'jiangmiao/auto-pairs'
-Plugin 'mattn/emmet-vim'
-Plugin 'othree/html5.vim'
-Plugin 'stephpy/vim-yaml'
 Plugin 'tpope/vim-surround'
-Plugin 'vim-scripts/vim-auto-save'
 call vundle#end()
 filetype plugin indent on
 
