@@ -15,8 +15,6 @@ syntax on
 
 " Display the status line *always*
 set laststatus=2
-let g:solarized_termcolors=256
-let g:auto_save_in_insert_mode = 0  " do not save while in insert mode
 
 " Display the cursor line
 set cursorline
@@ -34,8 +32,6 @@ set statusline+=%*
 set statusline+=\ %t%m%r%h%w\ %=%({%{&ff}\|%{(&fenc==\"\"?&enc:&fenc).((exists(\"+bomb\")\ &&\&bomb)?\",B\":\"\")}%k\|%{&filetype}}%)\ %([%l,%v][%p%%]\ %)
 
 set nofoldenable
-" Enable JS syntax highliting
-au FileType javascript call JavaScriptFold()
 
 " Set the colorscheme
 colorscheme grb256
@@ -43,8 +39,6 @@ colorscheme grb256
 nnoremap ; :
 nnoremap : ;
 
-let g:used_javascript_libs = 'jquery'
 set autoindent
 set smartindent
 set cindent
-inoremap { {<CR>}<up><end><CR>
